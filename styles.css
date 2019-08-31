@@ -3,7 +3,19 @@
 
 
 
-
+.frontimage
+{
+  position: absolute;
+  top: 20px;
+  left: 260px;
+  margin: 0 auto 10px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: #999 url("Sigid.jpg") 100% 0%;
+  background-size: 70px 70px;
+  box-shadow: 0 0 0 10px rgba(255,255,255,0.3);
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -18,7 +30,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100%;
 }
 
 /* Next & previous buttons */
@@ -100,4 +112,183 @@
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  overflow-x: hidden;
+  background-color: black;
+  color: #6C6D6E;
+}
+
+a {
+  transition: all 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.8;
+}
+
+.primary-color {
+  color: #61AEAE;
+}
+
+.secondary-color {
+  color: #0099CC;
+}
+
+
+.page-container {
+  max-width: 600px;
+  width: 100%;  
+}
+
+.section {
+  margin-bottom: 155px;
+  position: relative;
+}
+
+.content-container {      
+  border-radius: 20px;
+  background-color: white;
+}
+
+.nav {
+  position: absolute;
+  right: -150px;
+  top: 45px;
+}
+
+.nav > ul > li {
+  list-style: none;
+}
+
+.nav > ul > li > a {
+  display: block;
+  padding: 12px 15px;
+  color: #999A9B;
+}
+
+.nav > ul > li.active > a,
+.nav > ul > li > a:hover,
+.nav > ul > li > a:focus {
+  color: #0299CC;
+}
+
+.nav-deco {
+  display: inline-block;
+  width: 20px;
+  height: 8px;
+  background-color: #999A9B;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.nav > ul > li.active > a > .nav-deco,
+.nav > ul > li:hover > a > .nav-deco
+ {
+  background-color: #0299CC;
+}
+
+.content {  
+  padding: 55px;
+}
+
+.header {
+  padding: 65px 15px;
+}
+
+.title {
+  font-size: 2rem;
+  color: #626364;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  color: #656667;
+}
+
+.img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;  
+}
+
+footer {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  color: #9A9B9C;
+}
+
+.footer-link {
+  color: #9A9B9C;
+}
+
+
+
+.contact-form {
+	max-width: 380px;
+}
+
+.form-group {
+	margin-bottom: 35px;
+}
+
+.btn {
+	font-size: 1.1rem;
+	padding: 10px 35px;
+	border: none;
+}
+
+.btn-primary {
+	background-color: #9999CC;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+	background-color: #9a9afc;
+}
+
+.small {
+	font-size: 90%;
+}
+
+@media (max-width: 945px) {
+  .nav {
+    position: static;
+  }
+
+  .page-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 575px) {
+	.gallery-item {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+@media (max-width: 480px) {
+  footer {
+    display: block;
+  }
+
+  footer span {
+    display: block;
+    padding: 15px;
+  }
 }
