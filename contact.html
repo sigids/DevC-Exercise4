@@ -23,25 +23,58 @@
 <section class="section">
 <nav class="nav">
   <ul>
-  <li class="active">
-    <a href="index.html"><span class="nav-deco"></span>First Of All</a>
+  <li >
+    <a href="index.html"><span class="nav-deco"></span>Intro</a>
   </li>
   <li>
       <a href="slider.html"><span class="nav-deco"></span>Gallery</a>
   </li>
-  <li>
+  <li class="active">
       <a href="contact.html"><span class="nav-deco"></span>Contact</a>
   </li>
 </ul>
 </nav>
-    
+
+
+         
+
 <div class="content-container">  
-    
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-            test modal
-          </button>
-          
+        <div class="mb-0 img-overlay-wrap">
+                <div class="img-overlay"></div>
+                <div class="img-overlay-text text-white p-5">
+                    <h4 class="mb-4">Contact Me</h4>
+                    <p class="small">
+                        Please feel free to contact me.
+                        Please fill form below or just send me message. 
+                    </p>
+                </div>
+            </div>
+
+<div class="content">
+    <form action="https://formspree.io/sigid.sumargo@gmail.com" method="POST" >
+        <div class="form-group">
+                <input type="text" id="contact_name" name="name"
+                    class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
+                    placeholder="Name" required="" />
+            </div>
+            <div class="form-group">
+                <input type="email" id="contact_email" name="name"
+                    class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
+                    placeholder="Email" required="" />
+            </div>
+            <div class="form-group">
+                    <textarea rows="6" id="contact_message" name="name"
+                        class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
+                        placeholder="Message..." required=""></textarea>
+            </div>
+
+            <div class="form-group text-right">
+                    <button type="submit" class="btn btn-primary rounded-0" data-toggle="modal" data-target="#exampleModal">
+                            Submit
+                    </button>                    
+            </div>            
+    </form>       
+
           <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -53,7 +86,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  ...
+                  Thank you for your message will back to you soon
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -62,6 +95,10 @@
               </div>
             </div>
           </div>
+    
+</div>
+
+  
     
 
           </div>

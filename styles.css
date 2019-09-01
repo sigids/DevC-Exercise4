@@ -1,20 +1,17 @@
 * {box-sizing:border-box}
 
-
-
-
 .frontimage
 {
-  position: absolute;
+  position: relative;
   top: 20px;
   left: 260px;
-  margin: 0 auto 10px;
+  /* margin: 0 auto 10px; */
   height: 70px;
   width: 70px;
   border-radius: 50%;
-  background: #999 url("Sigid.jpg") 100% 0%;
+  background: rgb(94, 91, 91) url("Sigid.jpg") 100% 0%;
   background-size: 70px 70px;
-  box-shadow: 0 0 0 10px rgba(255,255,255,0.3);
+  box-shadow: 0 0 0 10px rgba(63, 59, 59, 0.3);
 }
 
 /* Slideshow container */
@@ -92,7 +89,7 @@
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.dot:hover {
   background-color: #717171;
 }
 
@@ -121,7 +118,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   overflow-x: hidden;
-  background-color: black;
+  background-color: #000000;
   color: #6C6D6E;
 }
 
@@ -209,7 +206,7 @@ p {
 
 .title {
   font-size: 2rem;
-  color: #626364;
+  color: #dbe5f0;
 }
 
 .page-title {
@@ -235,6 +232,32 @@ footer {
   color: #9A9B9C;
 }
 
+
+.img-overlay-wrap {
+	position: relative;
+	min-height: 280px;
+	background-image: url(contact.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.img-overlay {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.img-overlay-text {
+	position: relative;
+	z-index: 1000;
+}
 
 
 .contact-form {
@@ -274,6 +297,9 @@ footer {
     padding-right: 15px;
   }
 }
+
+
+
 
 @media (max-width: 575px) {
 	.gallery-item {
